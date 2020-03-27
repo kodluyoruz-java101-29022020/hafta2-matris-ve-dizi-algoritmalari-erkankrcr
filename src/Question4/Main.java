@@ -12,14 +12,14 @@ public class Main {
 		
 		Printer.print("Dizi Uzunluðunu Belirtiniz : ");
 		
-		byte[] arr = Array.fillArray(Input.getInstance().nextInt());
+		byte[] arr = Array.fillArray(Input.getInstance().nextInt(),20);
 		
 		Printer.print("Üretilen Dizi",true);
 		
 		Printer.printArray(arr);
 		
-		// Brute Force yontem disinda en kolay ve etkili yol
-		Set<Integer> duplicateElements = Array.findDuplicateElements(arr);
+		//Set<Integer> duplicateElements = Array.findDuplicateElements(arr);
+		byte[] duplicateElements = Array.findDuplicateElements(arr);
 		
 		Printer.print("Tekrarlayan Elemanlarýn Dizisi",true);
 		

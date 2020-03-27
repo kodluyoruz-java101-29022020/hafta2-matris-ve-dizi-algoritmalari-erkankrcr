@@ -22,8 +22,8 @@ public class Printer {
 		}
 	}
 	
-	public static <T> void printSet(Set<T> list) {
-		for(T i:list) {
+	public static void printSet(byte[] arr) {
+		for(byte i:arr) {
 			print(i,true);
 		}
 	}
